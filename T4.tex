@@ -1,0 +1,125 @@
+\documentclass{beamer}
+
+% https://matplotlib.org/users/pyplot_tutorial.html#controlling-line-properties
+
+\usetheme{Boadilla}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{amssymb}
+\usetikzlibrary{trees}
+
+% Instituto de Neurobiolog\'ia \\ UNAM - M\'exico
+
+\newcommand\nombre{L. Gonz\'alez-Santos}
+\newcommand\depto{Computaci\'on}
+\newcommand\instituto{Instituto de Neurobiolog\'ia \\ UNAM}
+\newcommand\correo{santosg572@gmail.com}
+\newcommand\iniciales{LGS}
+
+\newtheorem{mytheorem}{Theorem}
+\newtheorem{mylemma}{Lemma}
+\newtheorem{mycorollary}{Corollary}
+\theoremstyle{definition}
+\newtheorem{mydefinition}{Definition}
+\newtheorem{historylabel}{Historycal label}
+\newtheorem{myexample}{Example}
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+
+\newcommand{\bR}{{\mathbf{R}}}
+\newcommand{\bC}{{\mathbf{C}}}
+\newcommand{\bT}{{\mathbf{T}}}
+\newcommand{\bZ}{{\mathbf{Z}}}
+\newcommand{\myemph}[1]{\alert{#1}}
+\newcommand{\essinf}{\mathop{\mathrm{ess\,inf}}}
+\renewcommand{\phi}{\varphi}
+\newcommand{\eps}{\varepsilon}
+\DeclareMathOperator{\adj}{adj}
+\DeclareMathOperator{\Range}{Im}
+\DeclareMathOperator{\mes}{mes}
+
+\tikzstyle{thinarrow}=[densely dashed,very thin]
+
+\title[Distribuciones de Probabilidad]
+{\mbox{Introducci\'on al Lenguaje de Programaci\'on}\\\mbox{R}}
+\author[santosg572@gmail.com]{\nombre \\
+{\small \correo}}
+\institute[\iniciales]{\instituto}
+\date{\today}
+
+\hypersetup{pdfkeywords={Hermitian Toeplitz matrices,eigenvectors,asymptotics}}
+
+\AtBeginSection[] {
+\begin{frame}{Contenido}
+\tableofcontents[currentsection]
+\end{frame}
+}
+
+%===============================================
+
+\begin{document}
+
+\begin{frame}[label=titlepage]
+\titlepage
+
+\end{frame}
+%===============================================
+
+%\begin{frame}{Contents}
+%\tableofcontents
+
+%\end{frame}
+
+%===============================================
+% http://docs.python.org.ar/tutorial/2/introduction.html
+
+%\section{Palabras reservadas en Python}
+
+\begin{frame}{Distribuciones de Probabilidad de Variables Discretas}
+
+\textbf{Definici\'on} La distribuci\'on de Probabilidad de una variable aleatoria discreta es una tabla, grafica, formula, que especifica todos los valores posibles de una variable aleatoria discreta junto con sus respectivas probabilidades.
+
+\vspace{3mm}
+
+Si permitimos que la distribuci\'on de probabilidad sea representada por $p(x)$, entonces $p(x) = P(X = x)$ es la probabilidad de la variable aleatoria discreta X que asume el valor $x$.
+
+
+\end{frame}
+
+\begin{frame}{Distribuciones de Probabilidad de Variables Discretas}
+
+\textbf{Media y Varianza de una Distribuci\'on de Probabilidad Discreta.} 
+
+\[
+\mu = \sum x p(x)
+\]
+\[
+\sigma^2 = \sum (x - \mu)^2 p(x) = \sum x^2 p(x) - \mu^2
+\]
+
+
+\end{frame}
+
+\begin{frame}{La Distribuci\'on Binomial }
+
+\begin{itemize}
+\item La Distribuci\'on es derivada de un proceso conocido como un ensallo de Berboulli.
+\item Swiss mathematician James Bernolli (1954-1705)
+\item \textbf{E Proceso de Bernoulli.} Una secuencia de ensayos de Bernoulli forma un proceso de Bernoulli bajo las siguientes condiciones.
+
+\begin{enumerate}
+\item Cada ensallo resulta de uno de los dos posibles resultados, mutuamente exclusivos. 
+\end{enumerate}
+
+\end{itemize}
+
+\end{frame}
+
+
+
+
+
+
+\end{document}
+
