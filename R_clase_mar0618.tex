@@ -1,0 +1,138 @@
+\documentclass{beamer}
+
+% https://matplotlib.org/users/pyplot_tutorial.html#controlling-line-properties
+
+\usetheme{Boadilla}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{amssymb}
+\usetikzlibrary{trees}
+
+% Instituto de Neurobiolog\'ia \\ UNAM - M\'exico
+
+\newcommand\nombre{L. Gonz\'alez-Santos}
+\newcommand\depto{Computaci\'on}
+\newcommand\instituto{Instituto de Neurobiolog\'ia \\ UNAM}
+\newcommand\correo{santosg572@gmail.com}
+\newcommand\iniciales{LGS}
+
+\newtheorem{mytheorem}{Theorem}
+\newtheorem{mylemma}{Lemma}
+\newtheorem{mycorollary}{Corollary}
+\theoremstyle{definition}
+\newtheorem{mydefinition}{Definition}
+\newtheorem{historylabel}{Historycal label}
+\newtheorem{myexample}{Example}
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+
+\newcommand{\bR}{{\mathbf{R}}}
+\newcommand{\bC}{{\mathbf{C}}}
+\newcommand{\bT}{{\mathbf{T}}}
+\newcommand{\bZ}{{\mathbf{Z}}}
+\newcommand{\myemph}[1]{\alert{#1}}
+\newcommand{\essinf}{\mathop{\mathrm{ess\,inf}}}
+\renewcommand{\phi}{\varphi}
+\newcommand{\eps}{\varepsilon}
+\DeclareMathOperator{\adj}{adj}
+\DeclareMathOperator{\Range}{Im}
+\DeclareMathOperator{\mes}{mes}
+
+\tikzstyle{thinarrow}=[densely dashed,very thin]
+
+\title[Estad\'istica Descriptiva]
+{\mbox{Introducci\'on al Lenguaje de Programaci\'on}\\\mbox{R}}
+\author[santosg572@gmail.com]{\nombre \\
+{\small \correo}}
+\institute[\iniciales]{\instituto}
+\date{\today}
+
+\hypersetup{pdfkeywords={Hermitian Toeplitz matrices,eigenvectors,asymptotics}}
+
+\AtBeginSection[] {
+\begin{frame}{Contenido}
+\tableofcontents[currentsection]
+\end{frame}
+}
+
+%===============================================
+
+\begin{document}
+
+%\begin{frame}[label=titlepage]
+%\titlepage
+
+%\end{frame}
+%===============================================
+
+%\begin{frame}{Contents}
+%\tableofcontents
+
+%\end{frame}
+
+%===============================================
+% http://docs.python.org.ar/tutorial/2/introduction.html
+
+%\section{Palabras reservadas en Python}
+
+\begin{frame}{Ejercicio}
+
+\textbf{Ejercicio para enviar hoy martes 6 de marzo.}
+
+\vspace{5mm}
+
+Leer el archivo "datos.txt" que tiene las edades de los participantes de una prueba psicologica.
+
+\vspace{5mm}
+
+Calcular lo siguiente:
+
+\end{frame}
+
+\begin{frame}{Gr\'aficos}
+
+\begin{enumerate}
+\item quitar los valores de edad menores que 18 y mayores que 70.
+\item Hacer un grafica de la frecuencia de cada edad.
+\item Histograma
+\item Poligono de frecuencias
+\item Distribuci\'on de frecuencias
+\item Distribuci\'on de frecuencias relativa
+\item Distribuci\'on de frecuencias acumulativa
+\item Distribuci\'on de frecuencias acumulativa relativa
+\item Barplot
+\item BoxPLot
+\end{enumerate} 
+
+
+\end{frame}
+
+
+\begin{frame}{Medidas de Tendencia Central}
+
+\begin{itemize}
+\item Media aritmetica
+\item Mediana
+\item Moda
+\item Skewness
+\end{itemize} 
+\end{frame}
+
+\begin{frame}{Medidas de Dispersi\'on}
+
+\begin{itemize}
+\item Rango
+\item Varianza
+\item Desviaci\'on Estandard
+\item Coeficiente de Variaci\'on
+\item Percentiles y Cuantiles
+\item Kurtosis
+\end{itemize} 
+\end{frame}
+
+
+
+
+\end{document}
+
